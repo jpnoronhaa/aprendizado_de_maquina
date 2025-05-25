@@ -1,16 +1,16 @@
 name: aprendizado_de_maquina
 channels:
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
+  - defaults
 dependencies:
-  - python=3.11
+  - scikit-learn
   - jupyter
+  - requests
   - matplotlib
   - numpy
   - pandas
   - pillow
-  - requests
-  - scikit-learn
+  - python=3.11
+  - pip
   - scipy
   - pip:
       - annotated-types==0.7.0
