@@ -1,0 +1,21 @@
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+
+% Desativa flutuação e força posição H
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+
+% Ajusta o tamanho máximo das imagens para a largura do texto
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+
+% Define o tamanho padrão para todas as imagens
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
