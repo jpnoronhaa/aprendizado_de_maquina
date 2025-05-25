@@ -1,0 +1,206 @@
+{
+    "missing_values": {
+        "parental_education_level": "Valores nulos preenchidos com \"High School\""
+    },
+    "frequency_encoding": {
+        "gender": {
+            "Female": 481,
+            "Male": 477,
+            "Other": 42
+        },
+        "part_time_job": {
+            "No": 785,
+            "Yes": 215
+        },
+        "extracurricular_participation": {
+            "No": 682,
+            "Yes": 318
+        }
+    },
+    "ordinal_encoding": {
+        "diet_quality": {
+            "Fair": 0,
+            "Good": 1,
+            "Poor": 2
+        },
+        "parental_education_level": {
+            "Bachelor": 0,
+            "High School": 1,
+            "Master": 2,
+            "NaN": 3
+        },
+        "internet_quality": {
+            "Average": 0,
+            "Good": 1,
+            "Poor": 2
+        }
+    },
+    "numeric_outliers": {
+        "age": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "lower_bound": 12.375,
+            "upper_bound": 29.375,
+            "min_value": 17,
+            "max_value": 24
+        },
+        "study_hours_per_day": {
+            "outlier_count": 7,
+            "percent_outliers": 0.7000000000000001,
+            "lower_bound": -0.24999999999999956,
+            "upper_bound": 7.35,
+            "min_value": 0.0,
+            "max_value": 8.3
+        },
+        "social_media_hours": {
+            "outlier_count": 5,
+            "percent_outliers": 0.5,
+            "lower_bound": -0.7,
+            "upper_bound": 5.699999999999999,
+            "min_value": 0.0,
+            "max_value": 7.2
+        },
+        "netflix_hours": {
+            "outlier_count": 4,
+            "percent_outliers": 0.4,
+            "lower_bound": -1.25,
+            "upper_bound": 4.75,
+            "min_value": 0.0,
+            "max_value": 5.4
+        },
+        "attendance_percentage": {
+            "outlier_count": 3,
+            "percent_outliers": 0.3,
+            "lower_bound": 58.400000000000006,
+            "upper_bound": 110.4,
+            "min_value": 56.0,
+            "max_value": 100.0
+        },
+        "sleep_hours": {
+            "outlier_count": 2,
+            "percent_outliers": 0.2,
+            "lower_bound": 3.0499999999999994,
+            "upper_bound": 9.85,
+            "min_value": 3.2,
+            "max_value": 10.0
+        },
+        "exercise_frequency": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "lower_bound": -5.0,
+            "upper_bound": 11.0,
+            "min_value": 0,
+            "max_value": 6
+        },
+        "mental_health_rating": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "lower_bound": -4.5,
+            "upper_bound": 15.5,
+            "min_value": 1,
+            "max_value": 10
+        },
+        "exam_score": {
+            "outlier_count": 2,
+            "percent_outliers": 0.2,
+            "lower_bound": 24.499999999999993,
+            "upper_bound": 114.9,
+            "min_value": 18.4,
+            "max_value": 100.0
+        }
+    },
+    "ordinal_outliers": {
+        "diet_quality": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "z_threshold": 3,
+            "mean": 0.7430910951893551,
+            "std": 0.7455577904812358
+        },
+        "parental_education_level": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "z_threshold": 3,
+            "mean": 0.7986501687289089,
+            "std": 0.7282571910143064
+        },
+        "internet_quality": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "z_threshold": 3,
+            "mean": 0.7739032620922385,
+            "std": 0.7051568061515603
+        }
+    },
+    "nominal_outliers": {
+        "gender": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "freq_threshold": 0.01,
+            "rare_categories": [],
+            "category_counts": {
+                "477": 433,
+                "481": 421,
+                "42": 35
+            }
+        },
+        "part_time_job": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "freq_threshold": 0.01,
+            "rare_categories": [],
+            "category_counts": {
+                "785": 699,
+                "215": 190
+            }
+        },
+        "extracurricular_participation": {
+            "outlier_count": 0,
+            "percent_outliers": 0.0,
+            "freq_threshold": 0.01,
+            "rare_categories": [],
+            "category_counts": {
+                "682": 606,
+                "318": 283
+            }
+        }
+    },
+    "normalization": {
+        "study_hours_per_day": {
+            "min_original": 0.0,
+            "max_original": 7.2,
+            "min_scaled": 0,
+            "max_scaled": 1
+        },
+        "social_media_hours": {
+            "min_original": 0.0,
+            "max_original": 5.6,
+            "min_scaled": 0,
+            "max_scaled": 1
+        },
+        "netflix_hours": {
+            "min_original": 0.0,
+            "max_original": 4.6,
+            "min_scaled": 0,
+            "max_scaled": 1
+        },
+        "attendance_percentage": {
+            "min_original": 59.5,
+            "max_original": 100.0,
+            "min_scaled": 0,
+            "max_scaled": 1
+        },
+        "sleep_hours": {
+            "min_original": 3.2,
+            "max_original": 9.8,
+            "min_scaled": 0,
+            "max_scaled": 1
+        },
+        "exam_score": {
+            "min_original": 26.2,
+            "max_original": 100.0,
+            "min_scaled": 0,
+            "max_scaled": 1
+        }
+    }
+}
